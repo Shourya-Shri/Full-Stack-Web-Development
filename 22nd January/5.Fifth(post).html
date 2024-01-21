@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration form</title>
+</head>
+<body>
+    <form method="post" target="_blank" action="/signup">  <!--In post request data doesn't go on url rather there is a body exists whic h takes the daata and here the dta doesn't get saved in history so it's safe too.............taget=_blank means submiting the data in another tab-->
+        <fieldset>
+            <legend>User Registration!!</legend>
+            <label for="Username">Enter your username: </label>
+            <input type="text" name="Username" id="Username">
+            <br>
+            <label for="Useremail">Enter your email: </label>
+            <input type="email" name="Useremail" id="Useremail">
+            <br>
+            Gender <br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <br>
+            <label for="Transgender">Transgender</label>
+            <input type="radio" name="gender" id="Transgender">
+            <br>
+            <input type="submit" value="submit form">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration form</title>
+</head>
+<body>
+    <form method="get"> <!--It saves the data in the form of url and the server has to read it from the url only. It can be saved in history so it's not much safer-->
+        <fieldset>
+            <legend>User Registration!!</legend>
+            <label for="Username">Enter your username: </label>
+            <input type="text" name="Username" id="Username" value="John" readonly disabled>
+            <br>
+            <label for="Useremail">Enter your email: </label>
+            <input type="email" name="Useremail" id="Useremail" placeholder="a@example.com" autofocus>
+            <br>
+            Gender <br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male"> <!--Value property has to be added here otherwise server won't be able to read "on"-->
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="Transgender">Transgender</label>
+            <input type="radio" name="gender" id="Transgender" value="transgender">
+            <br>
+            <input type="number" min="0" max="9">
+            <input type="submit" value="submit form">
+        </fieldset>
+    </form>
+</body>
+</html>
