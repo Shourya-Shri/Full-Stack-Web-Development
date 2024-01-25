@@ -1,0 +1,12 @@
+/*body {
+    color: yellow;
+    background-color: red;;
+}*/
+
+.heading {
+    color: red;
+    font-size: 43px;
+    text-align: center;
+    text-decoration: underline;
+    border: 1px dotted black;
+}
