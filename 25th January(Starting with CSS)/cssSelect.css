@@ -1,0 +1,35 @@
+/* Descendant Selector */
+
+main p{
+    color: red;
+}
+
+/*Child Selector*/
+
+h1> p {
+    color: blue;
+}
+
+/*Adjacent Selector*/
+/* Section ke baaad jo p aane wala hai usko target karo.*/
+
+/*section + p {
+    color: green;
+}*/
+
+/* General sibling Selector*/
+
+section ~ p {
+    color: green;
+}
+
+/*Attribute Selector*/
+
+[target="_blank"]{             /*We are targetting all the places where target="_blank was present, but we usually tacke allt his with classes*/
+    color: blueviolet;
+    text-decoration: none;
+}
+
+[alt~="PW"]{
+    background-color: black;
+}
