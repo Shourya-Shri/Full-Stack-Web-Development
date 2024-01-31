@@ -1,0 +1,80 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /*animation-name: colorchange;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: reverse;
+    animation-direction: alternate-reverse;*/
+    /*animation-iteration-count: 3;*/
+
+    /*animation-fill-mode: forwards;*/
+    /*animation-fill-mode: both;*/
+
+    animation: colorchange 8s linear 2s infinite reverse;
+}
+
+/*#ease {
+    animation-timing-function: ease;
+}
+#linear {
+    animation-timing-function: linear;
+}
+#ease-in {
+    animation-timing-function: ease-in;
+}
+#ease-in-out {
+    animation-timing-function: ease-in-out;
+}*/
+
+@keyframes colorchange{
+    /*from {background-color: yellow;
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        background-color: blue;
+        top: 0px;
+        left: 200px;
+    }
+    50%{
+        background-color: black;
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: aqua;
+        top: 200px;
+        right: 0px;
+    }
+    to {background-color: green;
+        top: 0px;
+        left: 800px;
+    }*/
+    0% {background-color: yellow;  /*Percent signifies time ki jab time 25,50 percent khatam ho gya ho tab kaunsa transition karna hai this that.*/
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        background-color: blue;
+        top: 0px;
+        left: 200px;
+    }
+    50% {
+        background-color: black;
+        top: 200px;
+        left: 200px;
+    }
+    75% {
+        background-color: aqua;
+        top: 200px;
+        right: 0px;
+    }
+    100% {background-color: green;
+        top: 0px;
+        left: 0px;
+    }
+}

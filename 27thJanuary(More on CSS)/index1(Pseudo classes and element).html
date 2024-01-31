@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:hover{
+            background-color: black;
+            color: white;
+        }
+        /*.hover:hover{  //All the selectors are valid.
+            background-color: blue;
+            color: red;
+        }*/
+        input:focus{
+            color: red;
+            background-color: bisque;
+            font-size: 25px;
+        }
+        /*a:hover{
+            color: pink
+        }
+        a:active{
+            color: greenyellow;
+        }*/
+        /*a:visited{
+            color: red;
+        }*/
+        /*a:first-child{
+            color: yellowgreen;
+            background-color: aquamarine;
+        }*/
+        /*a:nth-child(1){
+            background-color: yellow;
+        }*/
+        a:nth-child(2n+1){
+            background-color: yellow;
+        }
+        p::first-line{
+            color: aqua;
+        }
+        p::first-letter{
+            color: red;
+        }
+        p::after{
+            content: "SHOURYA";
+            color: rgb(61, 8, 25);
+        }
+        p::before{
+            content: "SHOURYA";
+            color: rgb(61, 8, 25);
+        }
+        p::selection{   /*For the selected text*/
+            background-color: darkorange;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Class -->
+
+    <p class="hover" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis!</p>
+
+    <input type="text">
+
+    <hr>  <!--Horizontal Lines-->
+    <nav>
+        <a href="https://www.google.com/" >Google</a>
+
+        <a href="https://www.google.com/" >Google</a>
+
+        <a href="https://www.google.com/" >Google</a>
+
+        <a href="https://www.google.com/" >Google</a>
+
+        <a href="https://www.google.com/" >Google</a>
+    </nav>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque doloremque soluta atque consectetur, non vitae libero voluptatum, accusantium quod praesentium sunt eligendi excepturi! Nemo corporis quisquam odit sapiente inventore cupiditate earum aspernatur debitis soluta accusamus tempore, id voluptate iure cum aliquam repellendus. Quas, placeat totam. Cum debitis amet explicabo.</p>
+
+</body>
+</html>
