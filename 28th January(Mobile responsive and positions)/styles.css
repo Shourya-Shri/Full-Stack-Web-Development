@@ -1,0 +1,57 @@
+body{
+    background-color: red;
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after{
+    content: " Welcome to the demo"
+}
+@media(max-width: 400px){
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'very small';
+    }
+}
+@media(400px <= width <= 750px){
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'medium';
+    }
+}
+/*@media(min-width: 400px) and (max-width: 650px){
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'medium';
+    }
+}*/
+@media (min-width: 750px){
+    /*
+    If vieport is atleast 900px then this style will apply
+    */
+    body{
+        background-color: purple;
+    }
+    div::after{
+        content: 'Smaller Size';
+    }
+}
+@media (min-width: 900px){
+    /*
+    If vieport is atleast 900px then this style will apply
+    */
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: 'Woah, it is working';
+    }
+}

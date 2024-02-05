@@ -1,0 +1,54 @@
+@media(max-width: 600px){
+    /*
+        phones
+    */
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'This is mobile compatible'
+    }
+}
+@media(min-width: 600px){
+    /*
+        portrait table and big phones
+    */
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: 'Portrait tabler and big phone';
+    }
+}
+@media(min-width: 700px){
+    
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: 'Tablets';
+    }
+}
+@media(min-width: 992px){
+    
+    body{
+        background-color: peru;
+    }
+    div::after{
+        content: 'Laptops';
+    }
+}
+@media(min-width: 1200px){
+    
+    body{
+        background-color: purple;
+    }
+    div::after{
+        content: 'This is for larger screens';
+    }
+}
+
+div{
+    text-align: center;
+    font-size: x-large;
+}
