@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+    <style>
+        p{
+          height: 250px;
+          width: 250px;
+          background-color: white;
+          border: 2px solid black;
+          overflow: hidden;
+          overflow: scroll; /*auto = scroll(different in some browser, in some that scroll barr diagram is just missing*/
+        }
+        .one{
+            height: 60px;
+            width: 60px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .two{
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+            position: absolute;
+            top:  0;
+            z-index: 2; /*Z-index works like astack jiska zada priority hoga wo utna upar aaiga*/
+        }
+    </style>
+</head>
+<body>
+    <!-- overflow-->
+
+    <!-- Z- index-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fuga tenetur in ab quibusdam exercitationem voluptatibus qui, eligendi repellat praesentium dolore facere aliquid atque explicabo eius autem, aliquam accusamus odio nulla labore! Sint, deleniti eligendi illo blanditiis cumque ducimus itaque sapiente architecto maiores quia corporis! Error nam modi molestias dolores nobis exercitationem voluptates dignissimos, repudiandae ducimus facere, esse libero veniam magni porro nulla architecto nesciunt! Libero omnis temporibus, minus reprehenderit totam ipsam. Eaque doloremque quis consequatur fugiat consequuntur accusantium. Ut quibusdam minus corrupti assumenda fugit a tempore dicta! Minus, nostrum! Repudiandae soluta doloribus, aspernatur ducimus facere quos vero numquam itaque.
+    </p>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>
