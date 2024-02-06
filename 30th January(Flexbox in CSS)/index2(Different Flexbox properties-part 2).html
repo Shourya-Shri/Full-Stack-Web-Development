@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .cont{
+            display: flex;
+            height: 300px;
+            border: 1px solid black;
+        
+        }
+        .box{
+            /*height: 100px;
+            width: 500px;*/
+            flex-basis: 200px; /*It use to asign pixls to the item of the browser when it is rendered*/
+        }
+        .box1{
+            background-color: red;
+            /*order: 100*/
+            /*flex-grow: 10;*/
+            flex: 0 0 100px; /* grow shrink basis*/
+            
+        }
+        .box2{
+            background-color: yellow;
+            /*flex-grow: 2;*/
+            /*order: 1;*/
+            /*flex-shrink: 2;*/
+            /*align-self: flex-end;*/
+            /*align-self: center;*/
+        }
+        .box3{
+            background-color: green;
+            /*order: 7;*/
+            /*flex-grow: 2;*/
+        }
+
+    </style>
+</head>
+<body>
+    <!--Flex-->
+    <div class="cont">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+    </div>
+</body>
+</html>

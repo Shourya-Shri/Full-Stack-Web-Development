@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .cont{
+            display: flex;  /*It takes complete line/block. */
+            /*display: inline-flex;*/ /*It only takes that area  where it is placed in HTML file*/
+            height: 160px;
+            border: 1px solid black;
+            /*flex-direction: row-reverse;*/    /* It changes the direction of elements inside a container. By default it's "row".*/
+            /*flex-direction: column;*/
+            /*flex-direction: row;*/
+            /*flex-wrap: wrap;*/ /*It wraps the content when screen size is shrinked*/
+            /*flex-wrap: wrap-reverse*/
+            /*justify-content: center;
+            justify-content: flex-end;
+            justify-content: space-around;*/
+            justify-content: center;
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: center;
+            column-gap: 100px;/*gap only applies to both row and columns*/ 
+            flex-flow: start nowrap; /*flex-flow is the combination of flex-direction and flex-wrap*/
+        }
+        .box{
+            /*height: 100px;
+            width: 100px;*/
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: yellow;
+        }
+        .box3{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Flex-->
+    <div class="cont">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+    </div>
+</body>
+</html>
