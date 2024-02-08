@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;/*If we would have written flex, then it would have shown in one  line*/
+            grid-template-columns: auto auto auto;/*The grid-template-column property defines the nmber of columns in your grid layout, and it can define the width of each column.*/
+            grid-template-columns: 1fr 2fr 3fr;/*fr stands for fraction units. It means that the column will take up as much space as possible within its container */
+            /*grid-template-columns: repeat(9,1fr);*/
+            grid-template-rows: 500px 50px 100px;
+            /*grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr);*/
+
+            /*grid-area: header header header;*/
+            /*row-gap: 100px; /*Gap for both*/
+            /*justify-items: center;/*end start  center stretch*/
+        }
+        .box{
+            /*height: 100px;
+            width: 100px;
+            margin: 10px;*/
+        }
+        .box1{
+            background-color:  red;
+            /*align-self: center; /*Align-self works on Y-Axis and Justify-Self works on X-axis*/
+            /*justify-self: center;
+            justify-self: end;*/
+            border: 2px solid black;
+            grid-row-start: 3;
+        }
+        .box2{
+            background-color: yellow;
+        }
+        .box3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--Grid System-->
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    
+</body>
+</html>
