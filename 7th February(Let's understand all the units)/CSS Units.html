@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units of CSS</title>
+    <style>
+        section{
+            border: 1px solid red;
+            /*width: 50vw;*/
+            /*width: 50%;*/
+            height: 100vh;/*vh-> view height*/
+            font-size: 20px;
+        }
+        main{
+            border: 1px dotted black;
+            /*width: 50vh;*/
+            height: 50vh;/*Depends on parents*/
+            /*font-size: 2rem;*//*It is based of root(font-size of body) (16px) so it will be 32px in this case*/
+            font-size: 1em;/*It takes the size of it;s parent */
+            font-size: 2em;/* 2* 20=40 px*//*By default , if parent size is not give then 1em=16px and 2m, 3em- 32px and 48px repectively.*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <main>
+            Hello World ! Kukrooo kooooo!
+        </main>
+    </section>
+</body>
+</html>
