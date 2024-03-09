@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 3</title>
+</head>
+<body>
+    <!--Normal HTML-->
+    <h1>Hello Bacchon - PWSkills</h1>
+    <p id="js"></p>
+
+    <button onclick="hey()" id="jss">SUbmit</button>
+    <script>
+        document.addEventListener("click", hello)
+        document.addEventListener("dblclick",hello)
+        document.addEventListener("mouseenter",hello)
+
+        function hello(){
+            document.getElementById('js').innerHTML = "Namaste Bacchon"
+        }
+        function hey(){
+            document.getElementById("jss").innerText="Namaste"
+            document.getElementById("jss").style.color="red"
+            document.getElementById("jss").style.backgroundColor="black"
+            document.getElementById("jss").style.padding="16px"
+            document.getElementById("jss").style.border="2px solid yellow"
+        }
+    </script>
+</body>
+</html>
