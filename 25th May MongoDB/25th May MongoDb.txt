@@ -1,0 +1,43 @@
+test> show database
+MongoshInvalidInputError: [COMMON-10001] 'database' is not a valid argument for "show".
+test> show databases
+admin   40.00 KiB
+config  84.00 KiB
+local   40.00 KiB
+test> show dbs
+admin   40.00 KiB
+config  84.00 KiB
+local   40.00 KiB
+test> use first_class
+switched to db first_class
+first_class> db.createCollection("Shourya")
+{ ok: 1 }
+first_class> show collections
+Shourya
+first_class> db.Shourya.find()
+
+first_class> db.Shourya.insertOne({Name: SHourya Shri, UID: 21BCS10424, AddrAddress: New Delhi})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:36)
+
+> 1 | db.Shourya.insertOne({Name: SHourya Shri, UID: 21BCS10424, Address: New Delhi})
+    |                                     ^
+  2 |
+
+first_class> db.Shourya.find()
+
+first_class> db.Shourya.insertOne({Name: "Shourya Shri", UID: "21BCS10424", Address: "New Delhi"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('66919b719e80f668e8c4e49b')
+}
+first_class> db.Shourya.find()
+[
+  {
+    _id: ObjectId('66919b719e80f668e8c4e49b'),
+    Name: 'Shourya Shri',
+    UID: '21BCS10424',
+    Address: 'New Delhi'
+  }
+]
+first_class>
